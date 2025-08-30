@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagens/foto-p-.png" type="image/x-icon" />
+    <title>Midias dinamicas</title>
+  </head>
+  <body>
+    <h1>Imagem dinamica</h1>
+    <hr />
+    <p>
+      Imagem dinamica. Veja ela se aperfeiçoando conforme vc vai almentando e
+      diminuindo a tela do navegador do site
+    </p>
+    <p><a href="pag002.html">proxima-pagina</a></p>
+    <p><a href="pag003.html">videos</a></p>
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p-.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m-.png"
+        type="image/png"
+      />
+      <img src="imagens/foto-g-.png" alt="Foto gigante, imagens flexivel" />
+    </picture>
+    <hr />
+  </body>
+</html>
