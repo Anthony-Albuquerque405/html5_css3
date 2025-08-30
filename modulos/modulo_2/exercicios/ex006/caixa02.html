@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gruping tags</title>
+    <style>
+      body {
+        background-color: bisque;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+      }
+      header {
+        background-color: rgb(9, 251, 251);
+        padding: 10px;
+        margin: 10px;
+      }
+      h1 {
+        box-shadow: inset 3px 5px 5px 6px rgb(65, 108, 121);
+      }
+      nav {
+        background-color: rgba(126, 171, 210, 0.869);
+        padding: 5px;
+        box-shadow: 5px 4px 2px rgba(40, 39, 39, 0.502);
+      }
+      nav > a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bolder;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+      }
+      main {
+        background-image: linear-gradient(45deg, blueviolet, blue);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 30px 0%;
+        box-shadow: 4px 4px 9px 0px rgba(62, 62, 62, 0.573);
+      }
+      section {
+        text-shadow: 1px 1px 2px black;
+      }
+      article {
+        background-color: rgb(207, 255, 158);
+      }
+      article > aside {
+        background-color: rgba(73, 78, 67, 0.699);
+      }
+      footer {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 3px;
+        margin: 0px;
+        border: 0px;
+      }
+      footer > p {
+        margin: 0px;
+      }
+      div#bola {
+        height: 100px;
+        width: 100px;
+        margin: 30px;
+        background-color: aquamarine;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+    <main>
+      <section><p>Esportes Politica e tecnologia</p></section>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas,
+          fugit iure non at cupiditate sed illum velit aspernatur, eligendi quo.
+          Deserunt nobis officia, qui voluptas quis rem ut vitae!
+        </p>
+        <aside>Artigo escrito por jose da silva</aside>
+      </article>
+    </main>
+    <footer>
+      <p>Desenvolvido por Anthony</p>
+    </footer>
+    <div id="bola"></div>
+  </body>
+</html>
