@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela com colgroup</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 500px;
+        border-collapse: collapse;
+      }
+      caption {
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+      }
+      col.nome {
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercicio de Tabela</h1>
+    <table>
+      <colgroup>
+        <col class="nome" />
+        <col class="sexo" />
+        <col class="idade" />
+        <col class="profi" />
+      </colgroup>
+      <caption>
+        cadastro
+      </caption>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+      </tr>
+      <tr>
+        <td>Ana maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+      </tr>
+      <tr class="destaque">
+        <td>GUstavo</td>
+        <td>M</td>
+        <td>28</td>
+        <td>Mecanico</td>
+      </tr>
+      <tr>
+        <td>maria Fernanda</td>
+        <td>F</td>
+        <td>30</td>
+        <td>Dev Junior</td>
+      </tr>
+    </table>
+  </body>
+</html>
