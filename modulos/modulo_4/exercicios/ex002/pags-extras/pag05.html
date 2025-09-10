@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pag 05</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightblue;
+        line-height: 1.6em;
+        text-indent: 15px;
+        margin: 20px;
+      }
+      #saida {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.267);
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+      }
+      a {
+        text-decoration: none;
+        color: rgba(0, 0, 139, 0.489);
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" onclick="clicou()">Click em mim</a>
+    <div id="saida"></div>
+
+    <script>
+      function clicou() {
+        s = window.document.getElementById("saida");
+        s.innerHTML += "<p>Obrigado por clicar</p>";
+      }
+    </script>
+  </body>
+</html>
