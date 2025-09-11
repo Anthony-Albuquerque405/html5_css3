@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 07</title>
+  </head>
+  <body>
+    <h1>Formulário 07</h1>
+    <form action="cadastro.php" method="post">
+      <p>
+        <label for="iest">Informe seu estado: </label>
+        <select name="estado" id="iest">
+          <optgroup label="Estados Brasileiros regionais">
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+          </optgroup>
+          <optgroup label="Estados Brasileiros centrais">
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+          </optgroup>
+          <optgroup label="Estados Brasileiros litorâneos">
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <label for="iprof">Informe seu profissão: </label>
+        <input type="text" id="iprof" name="profissao" list="lisprof" />
+        <datalist id="lisprof">
+          <option value="Desenvolvedor"></option>
+          <option value="Designer"></option>
+          <option value="Gerente de Projetos"></option>
+          <option value="Analista de Sistemas"></option>
+          <option value="Administrador"></option>
+          <option value="Estudante"></option>
+          <option value="Outro"></option>
+        </datalist>
+      </p>
+
+      <p>
+        <label for="imensagem">Informe sua mensagem: </label><br />
+        <textarea id="imensagem" name="mensagem"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
