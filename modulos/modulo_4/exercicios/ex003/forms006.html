@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 06</title>
+  </head>
+  <body>
+    <h1>Formulário 06</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Informe sua cor favorita: </label>
+            <input type="color" name="icor" id="icor" value="#00fa1f" />
+        </p>
+
+        <p>
+            <label for="inivel">Informe seu nível de satisfação: </label>
+            <input type="range" 
+            name="inivel" 
+            id="inivel" 
+            min="0" 
+            max="5" 
+            step="1" 
+            value="2"/>
+        </p>
+
+        <p>
+            <label for="ifoto">Informe sua foto: </label>
+            <input type="file" name="ifoto" id="ifoto" />
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+        </p>
+  </body>
+</html>
