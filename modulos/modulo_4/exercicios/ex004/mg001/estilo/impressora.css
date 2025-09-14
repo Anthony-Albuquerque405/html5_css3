@@ -19,3 +19,7 @@ menu {
 article::after {
   content: " - Fim do Artigo";
 }
+
+article {
+  width: 100%;
+}
