@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS midia quiries curso em video */
+
+@media screen and (min-width: 600px) {
+  i#burguer {
+    display: none;
+  }
+  menu {
+    display: block;
+    justify-items: center;
+  }
+  menu > ul > li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    background-color: rgb(99, 98, 98);
+    color: white;
+  }
+}
+main {
+  max-width: 800px;
+}
