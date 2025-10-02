@@ -18,19 +18,16 @@
       }
 
       #item1 {
-        flex-basis: 100px;
-        flex-shrink: 0;
-        flex-grow: 1;
+        flex: 0 1 150px; /* flex-grow | flex-shrink | flex-basis */
       }
       #item2 {
-        flex-basis: 150px;
-        flex-grow: 1;
-        flex-shrink: 1;
+        flex: 2 0 150px; /* flex-grow | flex-shrink | flex-basis */
       }
       #item3 {
-        flex-basis: 150px;
-        flex-shrink: 3;
-        flex-grow: 1;
+        flex: 1 2 150px; /* flex-grow | flex-shrink | flex-basis */
+      }
+      #item4 {
+        flex: auto; /* flex: 1 1 auto */
       }
     </style>
   </head>
@@ -39,6 +36,7 @@
       <div class="item" id="item1">A</div>
       <div class="item" id="item2">B</div>
       <div class="item" id="item3">C</div>
+      <div class="item" id="item4">D</div>
     </div>
   </body>
 </html>
