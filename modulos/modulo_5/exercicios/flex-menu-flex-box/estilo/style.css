@@ -27,6 +27,15 @@ header > h1 {
   /*border: 1px dotted black; */
   flex: 0 0 200px;
 }
+header > #burguer {
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+header > #burguer:hover {
+  color: black;
+  transition: color 0.5s;
+}
 header > nav {
   /* border: 1px dotted black; */
 
