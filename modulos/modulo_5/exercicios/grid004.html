@@ -3,28 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid layout na pratica</title>
+    <title>Grid Layout</title>
     <style>
-      div.container {
-        border: 3px solid blue;
-        height: 250px;
+      div.conteiner {
+        border: 3px solid #0000ff;
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        gap: 10px;
-        align-items: normal;
-        justify-items: normal;
-        align-content: normal;
-        justify-content: normal;
+        grid-template: repeat(3, 100px) / repeat(3, 1fr); /* grid-template-rows: 100px 100px 100px; */
       }
       div.item {
-        border: 3px solid red;
+        border: 3px solid #ff4800;
         padding: 5px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="conteiner">
       <div class="item">A</div>
       <div class="item">B</div>
       <div class="item">C</div>
@@ -33,6 +26,7 @@
       <div class="item">F</div>
       <div class="item">G</div>
       <div class="item">H</div>
+      <div class="item">I</div>
     </div>
   </body>
 </html>
