@@ -8,8 +8,11 @@
       div.conteiner {
         border: 3px solid #0000ff;
         display: grid;
-        grid-template-rows: 80px 80px 80px;
-        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-flow: column;
+        grid-auto-rows: 80px;
+        grid-auto-columns: 120px;
         gap: 10px;
         place-items: normal normal;
         place-content: normal normal;
@@ -35,5 +38,3 @@
     </div>
   </body>
 </html>
-
-10:35
