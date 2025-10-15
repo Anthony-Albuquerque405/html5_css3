@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.conteiner {
+  border: 3px solid red;
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(4, 1fr);
+}
+.caixa1 {
+  background-color: lightgoldenrodyellow;
+  grid-row: 1 / 4;
+  grid-column: 1 / 3;
+}
